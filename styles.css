@@ -1,0 +1,25 @@
+
+  
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto+Mono:wght@400;700&display=swap');
+
+
+*{
+   box-sizing: border-box;
+}
+
+html, h1, p {
+   margin: 0;
+   padding: 0;
+}
+
+body{
+   font-family: 'Inter', sans-serif;
+   font-family: 'Roboto Mono', monospace;
+   background-color: #f6f6f6;
+   display: flex;
+   justify-content: center;
+   margin: 0 auto;
+   max-width: 80vw;
+   min-width: 100vh;
+}
+
