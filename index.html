@@ -24,7 +24,7 @@
 						<div class="inputs__box">
 							<div class="inputs__input1">
 								<img src="images/dollar.svg" />
-								<input type="number" id="amount" value="0.00" />
+								<input type="number" id="amountBill" value="0.00" step="0.1" />
 							</div>
 							<p>Bill Amount</p>
 						</div>
@@ -44,7 +44,7 @@
 						</div>
 					</div>
 					<div class="buttons">
-						<button value="5" onclick="clickValButton">5%</button>
+						<button value="5" onclick="clickValButton(this.value)">5%</button>
 						<button value="10">10%</button>
 						<button value="15">15%</button>
 						<button value="20">20%</button>

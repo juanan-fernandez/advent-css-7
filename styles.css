@@ -87,21 +87,27 @@ body{
 .inputs{
    width: 100%;
    display: flex;
-   justify-content: space-around;
-   gap:2rem; 
+   justify-content: center;
+   gap:1rem; 
    align-items: center;
    height: 130px;
 }
 
 .inputs .inputs__box:nth-child(2){
    border: none;
+   width: 60%;
+   padding-right: 1rem;
 }
 
 .inputs__box {
    padding-top:2rem;
    height: 100%;
+   width: 100%;
    display: flex;
+   margin: 0 auto;
    flex-direction: column;
+   justify-content: center;
+   align-items: center;
    border-right: 1px solid #dedede;
 }
 
@@ -126,25 +132,25 @@ body{
    background: transparent;
 }
 
-.inputs input:focus {
+.inputs__box input:focus {
    outline: none;
    border-style: none;
    border-bottom: 1px dashed #B3B3B3;
 }
 
 .inputs__input1{
-   width: 320px;
+   width: 90%;
    display: flex;
-   margin-left: 2rem;
-   padding-right:3rem;
+   /*margin-left: 2rem;
+   padding-right:3rem;*/
 }
 
 .inputs__input2{
-   width: 240px;
+   width: 95%;
    display: flex;
-   margin-right: 2rem;
+   margin:0 auto;
+   /*margin-right: 1rem;*/
 }
-
 
 
 .inputs__box p {
@@ -199,5 +205,11 @@ body{
    font-family: "Roboto Mono";
    font-size: 20px;
    font-weight: 700;
+}
+
+.btn-calculate button:hover {
+   cursor: pointer;
+   transform: scale(1.1);
+   transition: ease 400ms;
 }
 
