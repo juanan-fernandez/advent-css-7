@@ -1,6 +1,5 @@
 const amountBill = document.getElementById('amountBill');
 const people = document.getElementById('people');
-let percentVal = 0;
 const tipAmount = document.querySelectorAll('.amount')[0];
 const tipPerPerson = document.querySelectorAll('.amount')[1];
 
@@ -33,13 +32,11 @@ function formatNumbers(myNumber) {
 }
 
 function clickValButton(tipPercentValue) {
-	console.log(tipPercentValue);
 	const percentButtons = document.querySelectorAll('.buttons__button');
 
 	percentButtons.forEach(btn => {
 		btn.classList.remove('buttons__button--selected');
 		if (btn.value === tipPercentValue) {
-			console.log(btn.value);
 			btn.classList.add('buttons__button--selected');
 		}
 	});
