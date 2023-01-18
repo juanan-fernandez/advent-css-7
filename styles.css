@@ -167,7 +167,7 @@ body{
    background-color: #eeeeee;
 }
 
-.buttons button {
+.buttons__button {
    font-family: "Roboto Mono";
    background-color: white;
    font-size: 1.3rem;
@@ -178,13 +178,19 @@ body{
    padding: 0.5rem;
 }
 
-.buttons button:hover {
+.buttons__button:hover {
    cursor: pointer;
    transform: scale(1.2);
    transition: ease 400ms;
 }
 
-.buttons button:focus {
+/* .buttons button:focus {
+   border-style: none;
+   color:white;
+   background-color: #60C1B6;
+} */
+
+.buttons__button--selected {
    border-style: none;
    color:white;
    background-color: #60C1B6;
